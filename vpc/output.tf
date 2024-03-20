@@ -1,4 +1,4 @@
-output private _subnets {
+output private_subnets {
   description = "prints out private_subnets"
   value = module.vpc.private_subnets
 }
