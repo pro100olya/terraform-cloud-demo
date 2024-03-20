@@ -25,7 +25,7 @@ data "terraform_remote_state" "rds" {
 }
 
 # Pulls AMI info 
-data "aws_ami" "amazon" {
+data "aws_ami" "amazon"{
   most_recent = true
 
   filter {
