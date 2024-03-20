@@ -25,12 +25,12 @@ data "terraform_remote_state" "rds" {
 }
 
 # Pulls AMI info 
-data "aws_ami" "amazon"{
+data "aws_ami" "amazon" {
   most_recent = true
 
   filter {
     name   = "name"
-    values = ["amzn2-kernel-5.10-hvm-2.0.*"]
+    values = ["amzn2-ami-kernel-5.10-hvm-2.0.*"]
   }
 
   filter {
