@@ -25,12 +25,12 @@ data "terraform_remote_state" "rds" {
 }
 
 # Pulls AMI info 
-data "aws_ami" "ubuntu" {
+data "aws_ami" "amazon" {
   most_recent = true
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+    values = ["amzn2-kernel-5.10-hvm-2.0.*"]
   }
 
   filter {
