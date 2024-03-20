@@ -38,5 +38,5 @@ data "aws_ami" "amazon" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["137112412989"] # Canonical
 }
